@@ -1,0 +1,56 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "toss a coin",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GameIntent",
+                    "slots": [
+                        {
+                            "name": "action",
+                            "type": "action"
+                        }
+                    ],
+                    "samples": [
+                        "{action}",
+                        "i select {action}",
+                        "i want to choose {action}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "action",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "tail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "head"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
