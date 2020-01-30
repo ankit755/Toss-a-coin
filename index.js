@@ -13,7 +13,7 @@ const LaunchRequestHandler = {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
     },
     handle(handlerInput) {
-        console.log('HEY! WELCOME TO TOSS A COIN SKILL BT ANKIT AMAN');
+       
         const speakOutput = 'Welcome to toss aaaa coin';
         return handlerInput.responseBuilder
             .speak(speakOutput)
